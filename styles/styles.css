@@ -265,9 +265,69 @@ body {
   margin-left: 50px;
 }
 
-/* -----------------------Certification-------------------- */
-.certifications .rightItem .rightItemDesc .post {
-  font-size: 14px;
+/* -----------------------SoftSkills-------------------- */
+.techSkills .skillCirc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.techSkills .skillCirc .skillItem {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 8px solid #b6d8d1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.techSkills .skillCirc .skillItem p {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.techSkills .skillCirc .skillItem:hover {
+  border: 8px solid #74cfb79f;
+  height: 95px;
+  width: 95px;
+}
+
+.techSkills .skillCirc .skillItem:hover p {
+  font-weight: 800;
+}
+
+.techSkills .skillItem1 {
+  background: conic-gradient(from 0deg at 50%, #74cfb79f 90%, whitesmoke 10%);
+}
+
+.techSkills .skillItem2 {
+  background: conic-gradient(from 0deg at 50%, #74cfb79f 70%, whitesmoke 10%);
+}
+
+.techSkills .skillItem3 {
+  background: conic-gradient(from 0deg at 50%, #74cfb79f 40%, whitesmoke 10%);
+}
+
+.techSkills .skillItem4 {
+  background: conic-gradient(from 0deg at 50%, #74cfb79f 60%, whitesmoke 10%);
+}
+
+.techSkills .skillItem5 {
+  background: conic-gradient(from 0deg at 50%, #74cfb79f 80%, whitesmoke 10%);
+}
+
+.techSkills .skillItem6 {
+  background: conic-gradient(from 0deg at 50%, #74cfb79f 50%, whitesmoke 10%);
 }
 
 /* ------------------------------------------------------------------------------- */

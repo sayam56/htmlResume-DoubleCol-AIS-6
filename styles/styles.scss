@@ -271,14 +271,61 @@ body {
 
 }
 
-/* -----------------------Certification-------------------- */
-.certifications{
-  .rightItem{
-    .rightItemDesc{
-      .post{
-        font-size: 14px;
+/* -----------------------SoftSkills-------------------- */
+.techSkills{
+
+  .skillCirc{
+    display: flex;
+    justify-content: space-around;
+    .skillItem{
+      display: inline-flex;
+      height: 90px;
+      width: 90px;
+      border-radius: 50%;
+      border: 8px solid #b6d8d1;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      p{
+        font-weight: 600;
+        font-size: 20px;
       }
     }
+
+
+    .skillItem:hover{
+      border: 8px solid #74cfb79f;
+      height: 95px;
+      width: 95px;
+      p{
+        font-weight: 800;
+      }
+    }
+  
+  }
+  
+
+
+ 
+  .skillItem1{
+    background: conic-gradient(from 0deg at 50%, #74cfb79f 90%,whitesmoke 10%);
+
+  }
+
+  .skillItem2{
+    background: conic-gradient(from 0deg at 50%, #74cfb79f 70%, whitesmoke 10%);
+  }
+  .skillItem3{
+    background: conic-gradient(from 0deg at 50%, #74cfb79f 40%, whitesmoke 10%);
+  }
+  .skillItem4{
+    background: conic-gradient(from 0deg at 50%, #74cfb79f 60%, whitesmoke 10%);
+  }
+  .skillItem5{
+    background: conic-gradient(from 0deg at 50%, #74cfb79f 80%, whitesmoke 10%);
+  }
+  .skillItem6{
+    background: conic-gradient(from 0deg at 50%, #74cfb79f 50%, whitesmoke 10%);
   }
 }
 
