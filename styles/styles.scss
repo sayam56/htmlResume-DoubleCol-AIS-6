@@ -329,6 +329,44 @@ body {
   }
 }
 
+/* -------------------------Interests------------------- */
+
+.interests{
+
+  .interestItems{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    .row1, .row2{
+      display: flex;
+      .intItem{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 25px;
+        i{
+          color: var(--headerColor);
+        }
+        p{
+          margin-top: 10px;
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+        }
+      }
+      .item4, .item5{
+        margin-left: 55px;
+      }
+      .item6{
+        margin-left: 55px;
+      }
+    }
+  }
+  
+}
+
 /* ------------------------------------------------------------------------------- */
 
 @media print {

@@ -330,6 +330,62 @@ body {
   background: conic-gradient(from 0deg at 50%, #74cfb79f 50%, whitesmoke 10%);
 }
 
+/* -------------------------Interests------------------- */
+.interests .interestItems {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.interests .interestItems .row1, .interests .interestItems .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.interests .interestItems .row1 .intItem, .interests .interestItems .row2 .intItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 25px;
+}
+
+.interests .interestItems .row1 .intItem i, .interests .interestItems .row2 .intItem i {
+  color: var(--headerColor);
+}
+
+.interests .interestItems .row1 .intItem p, .interests .interestItems .row2 .intItem p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.interests .interestItems .row1 .item4, .interests .interestItems .row1 .item5, .interests .interestItems .row2 .item4, .interests .interestItems .row2 .item5 {
+  margin-left: 55px;
+}
+
+.interests .interestItems .row1 .item6, .interests .interestItems .row2 .item6 {
+  margin-left: 55px;
+}
+
 /* ------------------------------------------------------------------------------- */
 @media print {
   html {
