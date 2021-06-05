@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+  --hovercolor: black;
+  --leftBgcolor: #343a46;
+  --headerColor: #20242e;
+  --fontColor: #3d3d3d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  color: #555;
+  background-image: linear-gradient(to bottom right, #20242e, #737f97);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.resume{
+  width: 8.5in;
+  height: 12in;
+  border-radius: 2px;
+  background: whitesmoke;
+  box-shadow: 13px 13px 20px #20242e,
+              -13px -13px 20px #60708f00;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#leftSide{
+  width: 33%;
+  height: 12in;
+  background: var(--leftBgcolor);
+  display:inline-block;
+  color: whitesmoke;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
+
+#rightSide{
+  width: 66%;
+  display:inline-block;
+  height: 12in;
+  background: whitesmoke;
+  color: var(--fontColor);
+  padding-left: 25px;
+  padding-top: 25px;
+  margin-right: 10px;
+}
+
+/* ----------Common CSS Left side-------------- */
+.sectionHeader{
+  background: var(--headerColor);
+  margin-top: 20px;
+  margin-left: -25px;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  font-weight: 700;
+}
+
+
+.info, .skillItem{
+  margin-top: 15px;
+  .infoHeader{
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .infoDetails{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  a{
+    color: whitesmoke ;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+    font-size: 15px;
+  }
+}
+
+/* ---------Common Css Right side---------- */
+.rightSectionHeader{
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 700;
+  border-top: 1px solid var(--leftBgcolor);
+  border-bottom: 1px solid var(--leftBgcolor);
+}
+.descText{
+  color: var(--fontColor);
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+}
+
+.rightItem{
+  display: flex;
+  flex-direction: row;
+  list-style-position: outside;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;  
+  margin-top: 15px;
+
+  .leftDur{
+    float: left;
+    width: 10%;
+    letter-spacing: 0px;
+  }
+  .rightItemDesc{
+    float: right;
+    margin-left: 25px;
+
+    .post{
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .company{
+      font-style: italic;
+      font-size: 15px;
+      margin-top: 3.5px;
+      margin-bottom: 3.5px;
+      letter-spacing: 0px;
+    }
+    ul{
+      li{
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+/* -------------------leftHeader section ---------------- */
+.leftHeader{
+  .name{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .desig{
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+
+
+/* ----------skills sectionn---------- */
+
+.skillItem{
+  .infoHeader{
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+.skillGraph{
+  height: 10px;
+  background: whitesmoke;
+  margin-right: 25px;
+  margin-top: 5px;
+}
+
+.softSkills{
+  .item2{
+    .skillGraph{
+      margin-right: 50px;
+    }
+  }
+  
+  .item3{
+    .skillGraph{
+      margin-right: 100px;
+    }
+  }
+}
+
+
+.techSkills{
+  .item1{
+    .skillGraph{
+      margin-right: 75px;
+    }
+  }
+  .item2{
+    .skillGraph{
+      margin-right: 25px;
+    }
+  }
+  .item3{
+    .skillGraph{
+      margin-right: 50px;
+    }
+  }
+}
+
+/* ---------------Languages section---------------- */
+
+
+.language{
+  .item1{
+    .skillGraph{
+      margin-right: 25px;
+    }
+  }
+  .item2{
+    .skillGraph{
+      margin-right: 50px;
+    }
+  }
+
+}
+
+/* -----------------------Certification-------------------- */
+.certifications{
+  .rightItem{
+    .rightItemDesc{
+      .post{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/* ------------------------------------------------------------------------------- */
+
+@media print {
+  html {
+    height: 11in;
+    width: 8.5in;
+    overflow: hidden;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .resume {
+    width: 100%;
+    box-shadow: none;
+  }
+}
